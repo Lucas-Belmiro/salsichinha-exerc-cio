@@ -16,44 +16,105 @@
             font-family: Raleway, sans-serif;
             background-color: #E8DAB2;
         }
-
-        header{
-            
-            width: 50vw;
-            height: 50vw;
-          
-            
+        
+        header{    
+            width: 100%;
+            height: 50vw;  
+            position: relative;
         }
-        header p{
 
+        header section {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        header p{
             font-size: 26px;
             font-style: italic;
             font-weight: 700;
-            margin-bottom: 0;
-            
+            margin-bottom: 0;  
         }
 
         header h1{
-
             font-size: 52px;
             margin-top: 0;
-            
         }
 
         header img {
             width: 370px;
             height: 192px;
-
-           
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
         }
+
+        article {
+            background-color: white;
+            border-radius: 10px;
+            width: 800px;
+            position: absolute;
+            right: 50%;
+            transform: translateX(50%);
+            padding: 34px 24px 50px 24px;
+            -webkit-box-shadow: 0px 2px 8px 6px rgba(0,0,0,0.26); 
+            box-shadow: 0px 2px 8px 6px rgba(0,0,0,0.26);
+        }
+
+        article img {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 15px;  
+        }
+
+        article iframe {
+            width: 100%;
+            height: 400px;
+            box-sizing: border-box;
+            padding: 15px; 
+        }
+        article h2 {
+            font-size: 30px;
+        }
+        article p {
+            line-height: 24px;
+        }
+        footer{
+            
+            background-color: #090909;
+            box-sizing: border-box;
+            height: 50px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+        footer p {
+            color: #ffffff;
+            position: absolute;
+            right: 0;
+            margin-right: 16px;
+        }
+
+        footer p a {
+            text-decoration: none;
+            color: #35B1D2;
+        }
+
 </Style>
 
 <body>
 
     <header>
 
-        <p>Bem-vindo!</p>
-        <h1>PetShop Salsichinha</h1>
+        <section>
+
+            <p>Bem-vindo!</p>
+            <h1>PetShop Salsichinha</h1>
+
+        </section>
+        
 
         <img src="images/salsichinha.png" alt="Silheuta de um cachorro salsichinha">
 
@@ -68,8 +129,7 @@
             <li>Fofos</li>
             <li>Expressivos</li>
             <li>Rebaixados</li>
-          </ul>
-        
+        </ul>
         <p>Os Dachshunds são cachorros enérgicos e adoram gastar sua energia procurado novos alvos para caçar ou se divertir com o seu tutor. Portanto, para que ele não acabe tendo sobrepeso por ficar muito tempo parado, é importante realizar atividades físicas com o pet.</p>
         <p>Desde passeios ou até mesmo, se for possível, um espaço para que ele possa correr livremente sem riscos. Além disso, eles são animais que adoram a presença de pessoas e não costumam se dar muito bem com a solidão.</p> 
 
@@ -83,8 +143,7 @@
     </article>
 
     <footer>
-        <p>Não compre, adote um cachorro no Amigo não se compra</p>
-
+        <p>Não compre, adote um cachorro no <a href="https://www.google.com.br">Amigo não se compra</a></p>
     </footer>
     
 </body>
